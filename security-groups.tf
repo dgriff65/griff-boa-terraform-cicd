@@ -1,10 +1,10 @@
 resource "aws_security_group" "griff_sec-groups" {
-  name        = "ashu_allow_rules"
+  name        = "griff_allow_rules"
   description = "Allow TLS inbound traffic and all outbound traffic"
   vpc_id      = data.aws_vpc.griff-exiting-vpc.id
 
   tags = {
-    Name = "ashu_firewall_rules_final"
+    Name = "griff_firewall_rules_final"
   }
 }
 # allow all outgoing ports for ipv4 
